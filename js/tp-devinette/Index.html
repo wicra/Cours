@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    input {
+      font-size: 16px;
+      padding: 5px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 8px 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    #guessField {
+      width: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Guess the Number Game</h1>
+
+<p>Instructions: Enter a number between 1 and 100, then click the "Submit guess" button.</p>
+
+<p class="guesses"></p>
+<p class="lastResult"></p>
+<p class="lowOrHi"></p>
+
+<label for="guessField">Enter a guess: </label>
+<input type="number" id="guessField" class="guessField" />
+<button class="guessSubmit">Submit guess</button>
+<script src="Js/App.js"></script>
+
+</body>
+</html>
