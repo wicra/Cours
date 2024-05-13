@@ -3,13 +3,22 @@
 using namespace std;
 
 
-void swal(int a , int b){
+void swap(int a , int b){
     cout << "a = " << a << " - b= " << b << endl;
     int c = a;
     a = b;
     b = c;
     cout << "a = " << a << " - b= " << b << endl;
 }
+
+void swap(int *a , int *b){
+    cout << "a = " << *a << " - b= " << *b << endl;
+    int *c = *a;
+    *a = *b;
+    *b = *c;
+    cout << "a = " << *a << " - b= " << *b << endl;
+}
+
 
 int main(){
     int first = 33 ;
