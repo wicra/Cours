@@ -13,9 +13,9 @@ void swap(int a , int b){
 
 void swap(int *a , int *b){
     cout << "a = " << *a << " - b= " << *b << endl;
-    int *c = *a;
+    int c = *a;
     *a = *b;
-    *b = *c;
+    *b = c;
     cout << "a = " << *a << " - b= " << *b << endl;
 }
 
