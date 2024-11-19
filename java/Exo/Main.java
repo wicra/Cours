@@ -85,9 +85,10 @@ public class Main {
 
     // EXO_09
     public static void factoriel(int n) {
-        for(int j =0;j<=n;j++){
-            System.out.println(j + "x" + n + "=" +j*n);
+        for(int j = n-1;j> 0;j--){
+            n *=j; 
         }
+        System.out.println(n);
     }
 
 
