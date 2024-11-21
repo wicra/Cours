@@ -70,6 +70,15 @@ public class Main {
         System.out.println("EXO_09");
         factoriel(5);
         System.out.println("\n");
+
+        // EXO_10
+        System.out.println("EXO_10");
+        reverse("WayToLearnX");
+
+        // EXO_11
+        System.out.println("EXO_11");
+        maxtab({1,4,5,3});
+        
     }
 
     // EXO_06
@@ -91,7 +100,31 @@ public class Main {
         System.out.println(n);
     }
 
+    // EXO_10
+    public static void reverse(String str) {
+        String motInverse = ""; 
+        
+        for (int i = str.length() - 1; i >= 0; i--) {
+            motInverse += str.charAt(i); 
+        } 
+        System.out.println(motInverse); 
+    }
 
-    
+    // EXO_11
+    public static void maxtab(int[] tab) {
+        int max[] = { 1, 2, 3, 4, 5 };
+        int maxtemp = 0  ;
+        for (int i = 0; i < max.length ; i++) {
+            if(maxtemp < max[i]){
+                maxtemp = max[i];
+            }
+            else{
+                maxtemp = max[i];
+            }
+        } 
+        System.out.println(max); 
+    }
+
+
 }
 
