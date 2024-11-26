@@ -1,6 +1,7 @@
-package Exo;
+import java.io.File;
 import java.util.*;
-
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 // The main method must be in a class named "Main".
 public class Main {
@@ -77,8 +78,20 @@ public class Main {
 
         // EXO_11
         System.out.println("EXO_11");
-        maxtab({1,4,5,3});
-        
+        //maxtab({1, 15, 3, 8, 25, 4, 5});
+
+        // EXO_12
+        System.out.println("EXO_12");
+        ascii('A'); 
+
+        // EXO_13
+        System.out.println("EXO_13");
+        tailleFichier("/Users/wicramachine/Cours/java/Exo/Main.java");
+
+        // EXO_14 & EXO_15
+        System.out.println("EXO_14 & EXO_15");
+        afficherHeure();
+                
     }
 
     // EXO_06
@@ -111,20 +124,41 @@ public class Main {
     }
 
     // EXO_11
-    public static void maxtab(int[] tab) {
-        int max[] = { 1, 2, 3, 4, 5 };
-        int maxtemp = 0  ;
-        for (int i = 0; i < max.length ; i++) {
-            if(maxtemp < max[i]){
-                maxtemp = max[i];
+    public static int maxtab(int[] tab) {
+        int maxtemp = tab[0]; 
+        
+        for (int i = 1; i < tab.length; i++) {
+            if (tab[i] > maxtemp) {
+                maxtemp = tab[i]; 
             }
-            else{
-                maxtemp = max[i];
-            }
-        } 
-        System.out.println(max); 
+        }
+        
+        return maxtemp;
     }
 
+    // EXO_12
+    public static void ascii(char caractere) {
+        byte valeurAscii = (byte) caractere;
+        System.out.println("Le caractère '" + caractere + "' a pour valeur ASCII : " + (valeurAscii & 0xFF));
+    }
 
+    // EXO_13
+    public static void tailleFichier(String chemin) {
+        File fichier = new File(chemin);
+        if (fichier.exists() && fichier.isFile()) {
+            long taille = fichier.length();
+            System.out.println("La taille du fichier '" + fichier.getName() 
+            + "' est : " + taille + " octets");
+        } else {
+            System.out.println("Le fichier n'existe pas ou n'est pas un fichier valide");
+        }
+    }
+
+    // EXO_14 & EXO_15
+    public static void afficherHeure() {
+        LocalDateTime maintenant = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        String heure = maintenant.format(formatter);
+        System.out.println("L'heure actuelle est : " + heure);
+    }
 }
-
