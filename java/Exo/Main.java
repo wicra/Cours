@@ -95,6 +95,13 @@ public class Main {
         System.out.println("EXO_16");
         exercice16();
                 
+        // EXO_17
+        System.out.println("\nEXO_17");
+        exercice17();
+
+        // EXO_18
+        System.out.println("\nEXO_18");
+        exercice18();
     }
 
     // EXO_06
@@ -176,4 +183,60 @@ public class Main {
         double vitesseMoyenne = distance / temps;
         System.out.println("La vitesse moyenne est de " + vitesseMoyenne + " miles par heure");
     }
+
+    // EXO_17
+    public static void exercice17() {
+        double distanceKm = 15.0;
+        int minutes = 50;
+        int secondes = 10;
+        double tempsHeures = (minutes + (secondes / 60.0)) / 60.0;
+        double vitesseMoyenne = distanceKm / tempsHeures;
+        
+        System.out.printf("Pour une distance de %.2f km parcourue en %d minutes et %d secondes,%n", 
+            distanceKm, minutes, secondes);
+        System.out.printf("La vitesse moyenne est de %.2f kilomètres par heure%n", vitesseMoyenne);
+    }
+    
+    // EXO_18
+    public static void exercice18() {
+        // Coefficients du système d'équations
+        // ax + by = e
+        // cx + dy = f
+        double a = 2;  // coefficient de x dans la première équation
+        double b = 3;  // coefficient de y dans la première équation
+        double c = 1;  // coefficient de x dans la deuxième équation
+        double d = -1; // coefficient de y dans la deuxième équation
+        double e = 8;  // terme constant de la première équation
+        double f = 2;  // terme constant de la deuxième équation
+        
+        // Calcul du déterminant principal
+        double determinant = a * d - b * c;
+        
+        if (determinant == 0) {
+            System.out.println("Le système n'a pas de solution unique (déterminant = 0)");
+            return;
+        }
+        
+        // Calcul de x et y selon la règle de Cramer
+        double x = (e * d - b * f) / determinant;
+        double y = (a * f - e * c) / determinant;
+        
+        // Affichage du système d'équations
+        System.out.println("Système d'équations :");
+        System.out.printf("%.1fx + %.1fy = %.1f%n", a, b, e);
+        System.out.printf("%.1fx + %.1fy = %.1f%n", c, d, f);
+        
+        // Affichage des solutions
+        System.out.println("\nSolutions :");
+        System.out.printf("x = %.2f%n", x);
+        System.out.printf("y = %.2f%n", y);
+        
+        // Vérification des solutions
+        double eq1 = a * x + b * y;
+        double eq2 = c * x + d * y;
+        System.out.println("\nVérification :");
+        System.out.printf("Équation 1 : %.2f = %.2f%n", eq1, e);
+        System.out.printf("Équation 2 : %.2f = %.2f%n", eq2, f);
+    }
+
 }
