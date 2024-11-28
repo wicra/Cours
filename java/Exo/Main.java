@@ -52,7 +52,6 @@ public class Main {
         int nb2 = nombre.nextInt();
         System.out.print("Entrez troisième nombre : ");
         int nb3 = nombre.nextInt();
-        nombre.close();
         System.out.println("La moyenne est : " + ((nb1+nb2+nb3)/3));
         System.out.println("\n");
         
@@ -91,6 +90,10 @@ public class Main {
         // EXO_14 & EXO_15
         System.out.println("EXO_14 & EXO_15");
         afficherHeure();
+
+        // EXO_16
+        System.out.println("EXO_16");
+        exercice16();
                 
     }
 
@@ -160,5 +163,17 @@ public class Main {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         String heure = maintenant.format(formatter);
         System.out.println("L'heure actuelle est : " + heure);
+    }
+
+    // EXO_16
+    public static void exercice16() {
+        Scanner vitesse = new Scanner(System.in);
+        System.out.print("Entrez la distance parcourue en miles : ");
+        double distance = vitesse.nextDouble();
+        System.out.print("Entrez le temps mis en heures : ");
+        double temps = vitesse.nextDouble();
+        vitesse.close();
+        double vitesseMoyenne = distance / temps;
+        System.out.println("La vitesse moyenne est de " + vitesseMoyenne + " miles par heure");
     }
 }
