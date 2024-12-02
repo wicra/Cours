@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Quelle balise HTML est utilisée pour créer un lien hypertexte?",
+            "choices": ["<link>", "<a>", "<href>", "<url>"],
+            "correct": 1
+        },
+        {
+            "question": "En CSS, quelle propriété est utilisée pour changer la couleur du texte?",
+            "choices": ["text-color", "font-color", "color", "text-style"],
+            "correct": 2
+        },
+        {
+            "question": "En PHP, comment déclare-t-on une variable?",
+            "choices": ["#variable", "var variable", "$variable", "@variable"],
+            "correct": 2
+        },
+        {
+            "question": "Quelle méthode JavaScript est utilisée pour sélectionner un élément HTML par son ID?",
+            "choices": ["querySelector()", "getElementById()", "selectElement()", "findById()"],
+            "correct": 1
+        },
+        {
+            "question": "Quelle balise HTML est utilisée pour créer un titre de niveau 1?",
+            "choices": ["<header>", "<h1>", "<title>", "<heading>"],
+            "correct": 1
+        },
+        {
+            "question": "En CSS, comment sélectionne-t-on une classe?",
+            "choices": ["#classe", ".classe", "@classe", "!classe"],
+            "correct": 1
+        },
+        {
+            "question": "Quelle fonction PHP permet d'afficher du texte?",
+            "choices": ["write()", "echo()", "print()", "display()"],
+            "correct": 1
+        },
+        {
+            "question": "Comment déclarer une fonction en JavaScript?",
+            "choices": ["function: myFunction()", "def myFunction()", "function myFunction()", "void myFunction()"],
+            "correct": 2
+        },
+        {
+            "question": "Quelle propriété CSS est utilisée pour ajouter une ombre à un élément?",
+            "choices": ["shadow", "box-shadow", "element-shadow", "drop-shadow"],
+            "correct": 1
+        },
+        {
+            "question": "En PHP, quel opérateur est utilisé pour la concaténation de chaînes?",
+            "choices": ["+", "&", ".", ","],
+            "correct": 2
+        },
+        {
+            "question": "Comment ajouter un commentaire en JavaScript?",
+            "choices": ["// Commentaire", "# Commentaire", "/* Commentaire */", "<!-- Commentaire -->"],
+            "correct": 0
+        },
+        {
+            "question": "Quelle balise HTML est utilisée pour créer un paragraphe?",
+            "choices": ["<paragraph>", "<text>", "<p>", "<para>"],
+            "correct": 2
+        },
+        {
+            "question": "En CSS, quelle propriété définit la taille de la police?",
+            "choices": ["text-size", "font-size", "text-style", "size"],
+            "correct": 1
+        },
+        {
+            "question": "Quelle fonction PHP permet de lire la longueur d'une chaîne?",
+            "choices": ["count()", "length()", "strlen()", "size()"],
+            "correct": 2
+        },
+        {
+            "question": "Comment déclarer un tableau en JavaScript?",
+            "choices": ["array[]", "let array = []", "Array()", "new Array[]"],
+            "correct": 1
+        },
+        {
+            "question": "Quelle balise HTML est utilisée pour créer une liste non ordonnée?",
+            "choices": ["<list>", "<ul>", "<ol>", "<nl>"],
+            "correct": 1
+        },
+        {
+            "question": "En CSS, quelle propriété permet de centrer un élément horizontalement?",
+            "choices": ["text-align: center", "margin: auto", "align: center", "position: center"],
+            "correct": 1
+        },
+        {
+            "question": "Quelle méthode PHP permet de vérifier si une variable est vide?",
+            "choices": ["isEmpty()", "isNull()", "empty()", "isBlank()"],
+            "correct": 2
+        },
+        {
+            "question": "Comment vérifier le type d'une variable en JavaScript?",
+            "choices": ["typeOf()", "typeof", "getType()", "type()"],
+            "correct": 1
+        },
+        {
+            "question": "Quelle propriété CSS est utilisée pour créer un espace entre les éléments d'une grille?",
+            "choices": ["grid-space", "grid-gap", "grid-spacing", "grid-margin"],
+            "correct": 1
+        }
+    ]
+}
