@@ -1,0 +1,5 @@
+javac -cp "lib/tp2.jar" -d bin src/Main.java src/Roue.java src/Point.java
+java -cp "lib/tp2.jar:bin" Main
+
+javac -cp "lib/tp2.jar" -d bin src/Turtle.java src/Point.java
+java -cp "lib/tp2.jar:bin" Turtle
